@@ -1,3 +1,9 @@
+
+#Author: Suteerth Vishnu
+#Python: version 2.7.4
+#Distabution of operationg system: Linux Ubuntu 13.04(Raring Ringtail)
+
+
 from sys import argv
 import os
 
@@ -18,14 +24,25 @@ if input=="e":
 	signing=(raw_input("Do you want to sign the message(y/n)").lower())
 	if signing=="y":
 		temp="-s"
+	#this is for entering the email adress
 	email=(raw_input("Enter email address:"))
-	output=(raw_input("Enter output file NAME:"))
+	#for chosing a location for the output file
+        sel=raw_input("Do you wish to save the file somwhere else(y/n)").lower
+        if sel =="y":
+                output=raw_input("Enter the file PATH in the form [ ../path/name ]")
+        else:
+                output="~/"+(raw_input("Enter output file NAME:"))
+	#the location of the input file
 	message=(raw_input("Enter the message file PATH:"))
+	
+	#the actual gpg command
 	os.system("gpg --armour --encrypt %s --output ~/%s --recipient %s %s" % (temp,output,email,message))
 
 
 elif input == "d":	
 	pass
 	#decrypt code
+	#path to the encrypted message
 	mPath=(raw_input("Enter the Message PATH:"))
+	#decrypting..
 	os.system("gpg --decrypt %s" %( mPath));
