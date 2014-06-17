@@ -8,7 +8,7 @@ from sys import argv
 import os
 
 print("Do you wish to view all the keys you possess: (y/n)")
-inK = (raw_input().lower())
+inK = raw_input().lower()
 if inK == "y":
 	print("Press q to Quit")
 	os.system("gpg --list-keys|less")
