@@ -1,10 +1,8 @@
-GPGterminal
+Encryption Simplifier
 ===========
+Terminal program to simplify encryption of files.
 
-Terminal program for pgp encryption
+Uses GPG for Linux
 
-As the title stated it is a gpg client for terminal to simplify the process of encryption cause we have to encrypt all the things.
-In the program the encrypted text is copied to the home folder by default. 
-This program was written in python version "2.7.4".. Right now it is only available for linux.
+Encrypts and adds password to the generated zip file for Mac
 
-The program was written in the distribution Ubuntu 13.04.
