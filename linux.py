@@ -47,6 +47,6 @@ elif input == "d":
 	pass
 	#decrypt code
 	#path to the encrypted message
-	mPath = (raw_input("Enter the Message PATH:"))
+	mPath = raw_input("Enter the Message PATH:")
 	#decrypting..
-	os.system("gpg --decrypt %s" %( mPath));
+	os.system("gpg --decrypt %s" %(mPath));
