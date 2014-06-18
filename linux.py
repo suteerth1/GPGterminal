@@ -1,7 +1,7 @@
 
 #Author: Suteerth Vishnu
 #Python: version 2.7.4
-#Distabution of operationg system: Linux Ubuntu 13.04(Raring Ringtail)
+#Distribution of operating system: Linux Ubuntu 13.04 (Raring Ringtail)
 
 
 from sys import argv
